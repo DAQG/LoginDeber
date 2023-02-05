@@ -36,5 +36,46 @@ Video funcionamiento
 https://vm.tiktok.com/ZMY2MJDxp/
 
 
+Parrafo componentes:
+
+Para cada componete y cada frame creado para la union usamos lo que es la quema de datos y botones con funciones que nos regrese al anterior frame o anteior ventana.
+Para el caso de validar datos de usurio se hizo lo que es pasar los textfiel a String para su debida validacion una vez quemado los datos
+
+![image](https://user-images.githubusercontent.com/117754291/216834008-0f4353d1-7cb1-4904-b532-aa72e5083276.png)
+
+
+En el caso de que los datos sean correctos se deplegaba la siguiente ventana y se cerraba la principal con el metodo disponse.El metodo disponse finaliza losn objetos
+y los limpia
+
+![image](https://user-images.githubusercontent.com/117754291/216834091-32b8762e-dcd7-4275-8d11-77590951f16d.png)
+
+
+Para dar funcion a cada boton usamos lo quye fue el setContentpane que es un contenedor que abarcara las funciones que queremos que realice en este caso seria
+abrir eln panel del imc.
+
+![image](https://user-images.githubusercontent.com/117754291/216834496-71199245-f18d-43a2-ad84-2b1bf5545f59.png)
+
+
+Lo mismo con los demas bototnes de traduccion y salir.
+
+![image](https://user-images.githubusercontent.com/117754291/216834635-54622214-e2be-440c-97c6-32289bbbb34f.png)
+
+Componentes usados:
+Jpanel
+Jlabel 
+Jslider
+JCombooBox
+JButton
+JTextField
+Jlabel(Ingreso de imagen)
+JRadio Button
+Jpanel(dentro de panel)
+JScroolPane
+
+
+
+
+
+
 
 
