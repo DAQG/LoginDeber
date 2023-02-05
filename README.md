@@ -1,6 +1,6 @@
 Grupo 4
 
-Llangui Marlon
+Lalangui Marlon
 
 Daniel Quihspe
 
