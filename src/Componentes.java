@@ -18,6 +18,7 @@ public class Componentes extends Login {
     private JButton IMCButton;
     private JLabel COMPONENTES2;
     private JButton Traduccion;
+    private JButton salir;
     String user;
 
 
@@ -98,6 +99,18 @@ public class Componentes extends Login {
                 tradu.setVisible(true);
                 dispose();
 
+            }
+        });
+        salir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame imc= new JFrame("Componentes");
+                imc.setContentPane(new Login().panel1);
+                imc.setSize(500,500);
+                imc.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                imc.pack();
+                imc.setVisible(true);
+                dispose();
             }
         });
     }

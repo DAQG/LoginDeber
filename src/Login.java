@@ -10,7 +10,7 @@ public class Login extends  JFrame {
     public JButton ingresar;
     private JLabel labelusuario;
     private JLabel labelpassword;
-    private JPanel panel1;
+    public JPanel panel1;
 
     public Login() {
         super("LOGIN");
