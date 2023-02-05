@@ -4,10 +4,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
 public class Ventana extends  JFrame {
-    private JTextField conusuario;
+    public JTextField conusuario;
     private JPasswordField concontra;
     private JButton Salir;
-    private JButton ingresar;
+    public JButton ingresar;
     private JLabel labelusuario;
     private JLabel labelpassword;
     private JPanel panel1;
@@ -18,14 +18,21 @@ public class Ventana extends  JFrame {
         ingresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String Usuario="1111";
-                String Contrasena="1111";
+                v1 frame2 = new v1();
+                String Usuario="user";
+                String Contrasena="user";
                 String PASS= new String((concontra.getPassword()));
-                if (conusuario.getText().equals(Usuario) && PASS.equals(Contrasena)) {
+                frame2.user = concontra.getText();
+                frame2.name.setText("Bienvenido "+frame2.user + "!!!");
+                if (frame2.user.equals(Usuario) && PASS.equals(Contrasena)) {
 
-                    inicio frame2 = new inicio();
+                    frame2.setContentPane(frame2.panel2);
+                    frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame2.pack();
+                    frame2.setSize(500, 500);
+                    frame2.setLocationRelativeTo(null);
                     frame2.setVisible(true);
-                    dispose();
+
                 }
                 else{
                     JOptionPane.showMessageDialog(null,"Usuario o contraseña incorrectos");
@@ -39,7 +46,10 @@ public class Ventana extends  JFrame {
             @Override
             public void run() {
                 JFrame frame = new Ventana();
-                frame.setSize(300, 300);
+                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setSize(500, 500);
+                frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
 
             }
