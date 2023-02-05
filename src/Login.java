@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 
-public class Ventana extends  JFrame {
+public class Login extends  JFrame {
     public JTextField conusuario;
     private JPasswordField concontra;
     private JButton Salir;
@@ -12,13 +12,13 @@ public class Ventana extends  JFrame {
     private JLabel labelpassword;
     private JPanel panel1;
 
-    public Ventana() {
+    public Login() {
         super("LOGIN");
         setContentPane(panel1);
         ingresar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                v1 frame2 = new v1();
+                Componentes frame2 = new Componentes();
                 String Usuario="user";
                 String Contrasena="user";
                 String PASS= new String((concontra.getPassword()));
@@ -32,6 +32,7 @@ public class Ventana extends  JFrame {
                     frame2.setSize(500, 500);
                     frame2.setLocationRelativeTo(null);
                     frame2.setVisible(true);
+                    dispose();
 
                 }
                 else{
@@ -45,13 +46,12 @@ public class Ventana extends  JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                JFrame frame = new Ventana();
+                JFrame frame = new Login();
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
                 frame.setSize(500, 500);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
-
             }
         });
     }

@@ -1,12 +1,9 @@
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 
-public class v1 extends Ventana{
+public class Componentes extends Login {
     public JPanel panel2;
     public JLabel name;
     private JSlider slider1;
@@ -18,10 +15,14 @@ public class v1 extends Ventana{
     private JLabel mosEs;
     private JList list1;
     private JLabel facultad;
+    private JButton IMCButton;
+    private JLabel COMPONENTES2;
+    private JButton Traduccion;
     String user;
 
 
-    public v1(){
+    public Componentes(){
+
     name.setText("Bienvenido " + user);
 
     slider1.addChangeListener(new ChangeListener() {
@@ -73,10 +74,32 @@ public class v1 extends Ventana{
             facultad.setText((String)(list1.getSelectedValue()));
         }
     });
+
+        IMCButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame imc= new JFrame("Imc");
+                imc.setContentPane(new Imc().panelimc);
+                imc.setSize(500,500);
+                imc.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                imc.pack();
+                imc.setVisible(true);
+                dispose();
+            }
+        });
+        Traduccion.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame tradu= new JFrame("traduccion");
+                tradu.setContentPane(new traduccion().pprincipal);
+                tradu.setSize(500,500);
+                tradu.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                tradu.pack();
+                tradu.setVisible(true);
+                dispose();
+
+            }
+        });
     }
-
-
-
-
 }
 

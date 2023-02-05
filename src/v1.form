@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="v1">
-  <grid id="27dc6" binding="panel2" layout-manager="GridLayoutManager" row-count="11" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Componentes">
+  <grid id="27dc6" binding="panel2" layout-manager="GridLayoutManager" row-count="13" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="439"/>
+      <xy x="20" y="20" width="500" height="499"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-13371946"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="824b8" class="javax.swing.JLabel" binding="name">
@@ -138,7 +140,7 @@
       </grid>
       <vspacer id="6316c">
         <constraints>
-          <grid row="10" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <component id="6b4c0" class="javax.swing.JLabel" binding="facultad">
@@ -160,6 +162,32 @@
           <grid row="7" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
+      </component>
+      <component id="8deee" class="javax.swing.JButton" binding="IMCButton" default-binding="true">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="IMC"/>
+        </properties>
+      </component>
+      <component id="7b080" class="javax.swing.JLabel" binding="COMPONENTES2">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Mas funciones"/>
+        </properties>
+      </component>
+      <component id="a6e20" class="javax.swing.JButton" binding="Traduccion">
+        <constraints>
+          <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Traduccion Ingles"/>
+          <verticalTextPosition value="0"/>
+        </properties>
       </component>
     </children>
   </grid>
