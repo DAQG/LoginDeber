@@ -81,9 +81,10 @@ public class Componentes extends Login {
             public void actionPerformed(ActionEvent e) {
                 JFrame imc= new JFrame("Imc");
                 imc.setContentPane(new Imc().panelimc);
-                imc.setSize(500,500);
                 imc.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 imc.pack();
+                imc.setSize(500,500);
+                imc.setLocationRelativeTo(null);
                 imc.setVisible(true);
                 dispose();
             }
@@ -93,9 +94,10 @@ public class Componentes extends Login {
             public void actionPerformed(ActionEvent e) {
                 JFrame tradu= new JFrame("traduccion");
                 tradu.setContentPane(new traduccion().pprincipal);
-                tradu.setSize(500,500);
                 tradu.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 tradu.pack();
+                tradu.setSize(500,500);
+                tradu.setLocationRelativeTo(null);
                 tradu.setVisible(true);
                 dispose();
 

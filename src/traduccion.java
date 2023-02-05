@@ -53,9 +53,10 @@ public class traduccion {
             public void actionPerformed(ActionEvent e) {
                 JFrame trad= new JFrame("traduccion");
                 trad.setContentPane(new Componentes().panel2);
-                trad.setSize(500,500);
                 trad.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 trad.pack();
+                trad.setSize(500,500);
+                trad.setLocationRelativeTo(null);
                 trad.setVisible(true);
 
             }

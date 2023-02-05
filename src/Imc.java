@@ -31,9 +31,10 @@ public class Imc {
 
                 JFrame imc= new JFrame("Imc");
                 imc.setContentPane(new Componentes().panel2);
-                imc.setSize(500,500);
                 imc.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 imc.pack();
+                imc.setSize(500,500);
+                imc.setLocationRelativeTo(null);
                 imc.setVisible(true);
 
 

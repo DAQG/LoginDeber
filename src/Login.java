@@ -29,7 +29,7 @@ public class Login extends  JFrame {
                     frame2.setContentPane(frame2.panel2);
                     frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame2.pack();
-                    frame2.setSize(500, 500);
+                    frame2.setSize(700, 700);
                     frame2.setLocationRelativeTo(null);
                     frame2.setVisible(true);
                     dispose();
@@ -49,7 +49,7 @@ public class Login extends  JFrame {
                 JFrame frame = new Login();
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.pack();
-                frame.setSize(500, 500);
+                frame.setSize(1200, 800);
                 frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
             }
