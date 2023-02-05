@@ -61,16 +61,16 @@ Lo mismo con los demas bototnes de traduccion y salir.
 ![image](https://user-images.githubusercontent.com/117754291/216834635-54622214-e2be-440c-97c6-32289bbbb34f.png)
 
 Componentes usados:
-Jpanel
-Jlabel 
-Jslider
-JCombooBox
-JButton
-JTextField
-Jlabel(Ingreso de imagen)
-JRadio Button
-Jpanel(dentro de panel)
-JScroolPane
+Jpanel,
+Jlabel ,
+Jslider,
+JCombooBox,
+JButton,
+JTextField,
+Jlabel(Ingreso de imagen),
+JRadio Button,
+Jpanel(dentro de panel),
+JScroolPane.
 
 
 
